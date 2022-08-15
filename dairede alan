@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class daire {
+    public static void main(String[] args) {
+        // degiskenleri belirle
+        int r , alfa ;
+        double alan,cevre,alan2 ;
+        //kullanici icin scanner
+        Scanner bjk =new Scanner(System.in);
+        System.out.println("dairenin yaricapini girinizz plzz : ");
+        r = bjk.nextInt();
+        System.out.println( r + " cm  , dairenin yaricapidir. ");
+        alan = 3.14 * r * r;
+        cevre = 2 * 3.14 * r ;
+        System.out.println("dairenin alani : " + alan + "cm2'dir.");
+        System.out.println("dairenin cevresi : " + cevre + "cm'dir.");
+
+        System.out.println("tarali alanin acisini giriniz  :  ");
+        alfa = bjk.nextInt();
+        alan2 = alan * alfa / 360 ;
+        System.out.println("tarali bolgenin alani  :  " + alan2);
+
+
+
+    }
+}
+
